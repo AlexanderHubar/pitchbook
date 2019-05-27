@@ -1,0 +1,59 @@
+.trial-form {
+	&_contact {
+		width: 100%;
+		padding: 0;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		.trial-form__input {
+			width: 100%;
+			color: @ligthGray;
+			font-family: @openSans;
+			font-size: 14px;
+			font-weight: 400;
+			&_name, &_email {
+				margin-bottom: 30px;
+			}
+		}
+		.trial-form__button_contact {
+			width: auto;
+			height: auto;
+			padding: 15px 23px;
+			margin: 0 auto;
+			font-family: @openSans;
+			border-radius: 3px;
+			font-size: 15px;
+			font-weight: 500;
+		}
+		.trial-form__textarea {
+			width: 527px;
+			min-height: 153px;
+			padding-top: 7px;
+    	padding-left: 11px;
+			border: none;
+			resize: none;
+			box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+			color: @ligthGray;
+			font-family: @openSans;
+			font-size: 14px;
+			font-weight: 400;
+			&:focus {
+				outline: none;
+				box-shadow: 0 1px 0 rgba(255, 139, 56, 1);
+			}
+			&::placeholder {
+				color: @ligthGray;
+				font-family: @openSans;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+	.wrapper {
+		display: flex;
+    flex-direction: column;
+		width: 528px;
+		margin-bottom: 40px;
+	}
+}

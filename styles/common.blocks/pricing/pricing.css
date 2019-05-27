@@ -1,0 +1,71 @@
+.price-list__item {
+  min-width: 343px;
+}
+.price-list-header:not(.popular) {
+  margin-top: 35px;
+}
+.price-list-header_item {
+  width: 100%;
+  padding: 17px;
+  background-color: #37495e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-list-header_item:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+.price-list-header_item:last-child {
+  border-bottom: 5px solid #ff8b38;
+}
+.price-list-header_tariff {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.price-list-header_price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 35px;
+  padding: 38px 0;
+}
+.price-list-header_price .number {
+  display: inline-block;
+  font-size: 94px;
+}
+.price-list-header_price .currency {
+  margin-bottom: -43px;
+}
+.price-list-header_payment {
+  color: #9ba4ae;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.price-list__description {
+  background-color: #ffffff;
+  height: 40px;
+  text-align: center;
+  color: #86878b;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.price-list__description:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+.popular::after {
+  content: 'OUR MOST POPULAR';
+  display: flex;
+  color: #ffffff;
+  min-width: 343px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  height: 40px;
+  background-color: #ff8b38;
+  font-weight: 700;
+  text-transform: uppercase;
+}

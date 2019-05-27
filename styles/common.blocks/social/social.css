@@ -1,0 +1,27 @@
+.social-media {
+  padding: 22px 0;
+}
+.social-media__info {
+  max-width: 361px;
+}
+.social-media__links {
+  width: auto;
+  margin-bottom: 0;
+}
+.social-media__links .social__item i {
+  font-size: 45px;
+}
+.social-media__links .social__item:not(:first-child) {
+  margin-left: 58px;
+}
+.social-media .social {
+  width: auto;
+}
+.h2 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+}
+.text {
+  line-height: 20px;
+}

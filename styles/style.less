@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700|Raleway:300,400,700&display=swap');
+@import './variables.less';
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: @openSans;
+	font-weight: 400;
+	font-size: 14px;
+	color: @gray;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1110px;
+	margin: 0 auto;
+	&_column {
+		flex-direction: column;
+	}
+	&_start {
+		align-items: flex-start;
+	}
+}
+
+@import './common.blocks/header/header.less';
+@import './common.blocks/welcome-section/welcome.less';
+@import './common.blocks/social/social.less';
+@import './common.blocks/tabs/tabs.less';
+@import './common.blocks/section/section.less';
+@import './common.blocks/stylish-section/stylish-section.less';
+@import './common.blocks/awesome-section/awesome-section.less';
+@import './common.blocks/contact/contact.less';
+@import './common.blocks/pricing/pricing.less';
+@import './common.blocks/comments/comments.less';
+@import './common.blocks/footer/footer.less';

@@ -1,0 +1,38 @@
+@import '../../variables.less';
+
+.footer {
+	width: 100%;
+	padding-top: 21px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: @primary;
+}
+
+.social {
+	display: flex;
+	width: 320px;
+	list-style: none;
+	margin-bottom: 15px;
+
+	&__item {
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
+		& i {
+			color: @lighterGray;
+			font-size: 22px;
+			transition: .2s;
+
+			&:hover {
+				color: @orange;
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+.policy {
+	opacity: 0.5;
+	color: @white;
+	font-size: 12px;
+}

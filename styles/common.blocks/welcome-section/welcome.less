@@ -1,0 +1,147 @@
+@import '../../variables.less';
+
+.welcome-section {
+	height: calc(~'100vh - 72px');
+	background-image: url('../img/welcome-section.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.h1 {
+	color: @white;
+	font-family: @raleway;
+	font-weight: 300;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.h1_dark {
+	color: @secondBlack;
+}
+
+.content {
+	max-width: 515px;
+
+	&__text {
+		opacity: 0.8;
+		color: @white;
+		font-family: @raleway;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 23px;
+		margin-bottom: 41px;
+	}
+
+	&__button {
+		padding: 10px 30px;
+		background: transparent;
+		border: 2px solid @white;
+		font-family: @openSans;
+		color: @white;
+		font-weight: 500;
+		font-size: 15px;
+		transition: .3s;
+
+		&:hover {
+			background: @orange;
+			cursor: pointer;
+		}
+	}
+}
+
+.container_welcome {
+	height: calc(~'100vh - 72px');
+	justify-content: space-between;
+}
+
+.line {
+	&::after {
+		content: "";
+		display: block;
+		margin: 35px 0;
+		width: 64px;
+		height: 2px;
+		border-radius: 3px;
+		background-color: @white;
+	}
+
+	&_orange::after {
+		content: "";
+		display: block;
+		margin: 25px 0;
+		width: 64px;
+		height: 2px;
+		border-radius: 3px;
+		background-color: @orange;
+	}
+
+	&_center::after {
+		margin: 25px auto;
+	}
+  
+}
+
+.card {
+	max-width: 360px;
+
+	&__header {
+		padding: 15px 53px;
+		color: @thirdBlack;
+		font-family: @openSans;
+		font-size: 20px;
+		font-weight: 700;
+		background-color: @secondWhite;
+		border-radius: 2px 2px 0 0;
+	}
+}
+
+.orange {
+	color: @orange;
+}
+
+.trial-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 29px;
+	background-color: @white;
+	&__input {
+		height: 31px;
+		border: none;
+		box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+		&::placeholder {
+			padding-left: 14px;
+			color: @ligthGray;
+		}
+		&_name {
+			margin-bottom: 36px;
+		}
+		&_email, &_password {
+			margin-bottom: 47px;
+		}
+		&:not(last-child) {
+			width: 285px;
+		}
+		&:focus {
+			outline: none;
+			box-shadow: 0 1px 0 rgba(255, 139, 56, 1);
+		}
+	}
+	&__button {
+		width: 100%;
+		height: 54px;
+		background-color: @orange;
+		border: none;
+		color: @white;
+		font-family: @openSans;
+		font-size: 15px;
+		font-weight: 500;
+		transition: .3s;
+
+		&:hover {
+			cursor: pointer;
+			background-color: @primary;
+		}
+	}
+}

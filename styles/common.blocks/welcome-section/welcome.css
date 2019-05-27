@@ -1,0 +1,128 @@
+.welcome-section {
+  height: calc(100vh - 72px);
+  background-image: url('../img/welcome-section.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.h1 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.h1_dark {
+  color: #212121;
+}
+.content {
+  max-width: 515px;
+}
+.content__text {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  margin-bottom: 41px;
+}
+.content__button {
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  transition: .3s;
+}
+.content__button:hover {
+  background: #ff8b38;
+  cursor: pointer;
+}
+.container_welcome {
+  height: calc(100vh - 72px);
+  justify-content: space-between;
+}
+.line::after {
+  content: "";
+  display: block;
+  margin: 35px 0;
+  width: 64px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.line_orange::after {
+  content: "";
+  display: block;
+  margin: 25px 0;
+  width: 64px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #ff8b38;
+}
+.line_center::after {
+  margin: 25px auto;
+}
+.card {
+  max-width: 360px;
+}
+.card__header {
+  padding: 15px 53px;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #f5f5f5;
+  border-radius: 2px 2px 0 0;
+}
+.orange {
+  color: #ff8b38;
+}
+.trial-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 29px;
+  background-color: #ffffff;
+}
+.trial-form__input {
+  height: 31px;
+  border: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+}
+.trial-form__input::placeholder {
+  padding-left: 14px;
+  color: #bdbdbd;
+}
+.trial-form__input_name {
+  margin-bottom: 36px;
+}
+.trial-form__input_email,
+.trial-form__input_password {
+  margin-bottom: 47px;
+}
+.trial-form__input:not(last-child) {
+  width: 285px;
+}
+.trial-form__input:focus {
+  outline: none;
+  box-shadow: 0 1px 0 #ff8b38;
+}
+.trial-form__button {
+  width: 100%;
+  height: 54px;
+  background-color: #ff8b38;
+  border: none;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: .3s;
+}
+.trial-form__button:hover {
+  cursor: pointer;
+  background-color: #37495e;
+}

@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #37495e;
+}
+.social {
+  display: flex;
+  width: 320px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+.social__item:not(:first-child) {
+  margin-left: 30px;
+}
+.social__item i {
+  color: #cccccc;
+  font-size: 22px;
+  transition: .2s;
+}
+.social__item i:hover {
+  color: #ff8b38;
+  transform: rotate(360deg);
+}
+.policy {
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 12px;
+}
