@@ -333,7 +333,7 @@ body {
   padding-top: 2px;
 }
 .tabs-body__item {
-  display: flex;
+  display: none;
 }
 .tabs-body__item img {
   margin-top: 20px;
@@ -350,6 +350,9 @@ body {
 }
 .tabs-body__item .last {
   margin-bottom: 46px;
+}
+.tabs-body .show {
+  display: flex;
 }
 .section {
   display: flex;
@@ -594,8 +597,16 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+.section_flex {
+  display: flex;
+  flex-direction: column;
+}
+.section_center {
+  align-items: center;
+}
 .slider {
   width: 100%;
+  padding: 0 106px;
 }
 .slider__button {
   border: none;
@@ -612,6 +623,12 @@ body {
   width: 100%;
   justify-content: space-between;
   list-style: none;
+}
+.slides-list li:first-child {
+  margin-right: 25px;
+}
+.slides-list li:last-child {
+  margin-left: 25px;
 }
 .slides-list__item {
   max-width: 273px;
