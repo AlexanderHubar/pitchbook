@@ -134,3 +134,32 @@
 	}
 
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+	.sublist-section, .picture-section {
+		padding: 108px 20px;
+	}
+
+	.container_section {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.section:nth-child(even) .section__image {
+    margin-top: 26px; 
+	}
+
+	.section:nth-child(odd) .section__image {
+		margin-top: 26px; 
+    margin-right: 26px; 
+		
+	}
+
+	.section:nth-child(even) .section__card {
+		margin-right: 20px;
+	}
+
+	.section__card {
+    margin-top: 20px;
+	}
+}

@@ -160,66 +160,12 @@
 	}
 }
 
-// @media only screen and (max-width: 425px) {
-// 	.tabs-nav {
-// 		flex-direction: row;
-// 		margin-right: 0; 
-// 		margin-bottom: 20px;
-
-// 		&__item:first-child {
-// 			border-radius: 4px 0 0 4px;
-// 		}
-
-// 		&__item:last-child {
-// 			border-radius: 0 4px 4px 0;
-// 		}
-// 	}
-
-// 	.tabs-nav__item:not(:last-child) {
-// 		border-bottom: 0;	
-//      border-right: 1px solid #ffffff; 
-// 	}
-
-// 	.tabs {
-// 		flex-wrap: wrap;
-
-// 		&-body__item .wrapper {
-// 			width: auto;
-// 			margin-right: 0;
-// 			padding: 0 10px;
-// 		}
-
-// 		&-body .show {
-// 			display: flex;
-// 			flex-wrap: wrap;
-// 			justify-content: center;
-// 		}
-
-// 		&-nav__item {
-// 			width: 90px;
-// 			padding: 35px 0px;
-// 		}
-
-// 		.tabs-nav .active {
-// 			width: 90px;
-// 			height: 85px;
-// 		}
-// 	}
-
-// 	.tabs {
-// 		justify-content: center;
-// 	}
-
-// 	.section_tabs {
-// 		overflow: hidden;
-// 	}
-// }
-
 @media only screen and (max-width: 768px) {
 	.tabs-nav {
 		flex-direction: row;
-		margin-right: 0; 
+		margin-right: 0;
 		margin-bottom: 20px;
+		justify-content: center;
 
 		&__item:first-child {
 			border-radius: 4px 0 0 4px;
@@ -231,20 +177,84 @@
 	}
 
 	.tabs-nav__item:not(:last-child) {
-		border-bottom: 0;	
-     border-right: 1px solid #ffffff; 
+		border-bottom: 0;
+		border-right: 1px solid #ffffff;
+	}
+
+	.container_start {
+		align-items: center;
 	}
 
 	.tabs {
 		flex-wrap: wrap;
 
 		&-body__item {
-				.wrapper {
-					width: auto;
-					margin-right: 0;
-					padding: 0 10px;
-				}
-				max-width: 570px;
+			.wrapper {
+				width: auto;
+				margin-right: 0;
+				padding: 0 10px;
+			}
+
+			max-width: 570px;
+		}
+
+		&-body .show {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+
+		.tabs-nav .active {
+			height: 107px;
+		}
+	}
+
+	.tabs {
+		justify-content: center;
+	}
+
+	.section_tabs {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1080px) {
+	.container_start {
+		align-items: center;
+	}
+
+	.tabs-nav {
+		flex-direction: row;
+		margin-right: 0;
+		margin-bottom: 20px;
+		justify-content: center;
+
+		&__item:first-child {
+			border-radius: 4px 0 0 4px;
+		}
+
+		&__item:last-child {
+			border-radius: 0 4px 4px 0;
+		}
+	}
+
+	.tabs-nav__item:not(:last-child) {
+		border-bottom: 0;
+		border-right: 1px solid #ffffff;
+	}
+
+	.tabs {
+		flex-direction: column;
+
+		&-body__item {
+			.wrapper {
+				width: auto;
+				margin-right: 0;
+				padding: 0 10px;
+			}
+
+			max-width: 570px;
 		}
 
 		&-body .show {

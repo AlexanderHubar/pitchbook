@@ -48,7 +48,7 @@
 
 .submenu-nav {
 	display: flex;
-	padding: 4.07em 0 2.43 0;	
+	padding: 4.07em 0 2.43em 0;	
 
 	.submenu-nav__item {
 		display: flex;
@@ -216,5 +216,20 @@
 
 	.navigation__list {
 		display: none;
+	}
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+	.submenu-list {
+		flex-wrap: wrap;
+	}
+	.submenu-nav {
+    padding: 0 0 2.43em 0;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1260px) {
+	.submenu-list {
+		padding: 0 20px;
 	}
 }
