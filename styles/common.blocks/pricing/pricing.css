@@ -84,7 +84,7 @@
     min-width: 320px;
   }
 }
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .price-list {
     flex-direction: column;
   }
@@ -92,7 +92,10 @@
   .price-list {
     width: auto;
   }
-  .price-list-header {
-    margin-top: 35px;
+  .price-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .price-list-header:not(.popular) {
+    margin-top: 0;
   }
 }
