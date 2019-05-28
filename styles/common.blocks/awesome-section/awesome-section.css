@@ -45,6 +45,7 @@
 @media only screen and (max-width: 425px) {
   .awesome-list {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .section_awesome {
     padding: 50px 10px;
@@ -63,5 +64,14 @@
   }
   .h1_dark {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .awesome-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .awesome-list__item:not(:last-child) {
+    margin-bottom: 25px;
   }
 }

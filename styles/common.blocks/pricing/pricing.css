@@ -69,7 +69,7 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 639px) {
   .price-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -77,10 +77,22 @@
   .section .price-list__item {
     min-width: 320px;
   }
-  .section .price-list__item:not(:last-child) {
-    margin-bottom: 20px;
+  .price-list-header {
+    margin-top: 0;
   }
   .popular::after {
     min-width: 320px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .price-list {
+    flex-direction: column;
+  }
+  .awesome-list,
+  .price-list {
+    width: auto;
+  }
+  .price-list-header {
+    margin-top: 35px;
   }
 }

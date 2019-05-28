@@ -198,7 +198,7 @@ body {
   display: flex;
   animation: fadeIn 2s ease-in both;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .header {
     padding: 0 10px;
   }
@@ -340,7 +340,7 @@ body {
   cursor: pointer;
   background-color: #37495e;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
@@ -408,6 +408,57 @@ body {
   }
   .social-media__links .social__item:nth-child(6) {
     margin-left: 0;
+  }
+}
+@media only screen and (min-width: 344px) and (max-width: 375px) {
+  .social-media__links {
+    padding: 0 35px;
+  }
+  .social-media__links .social__item:nth-child(6) {
+    margin-left: 2.14em;
+  }
+  .social-media__links .social__item:nth-child(5) {
+    margin-left: none;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .social-media__links {
+    padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .social-media .social {
+    width: 100%;
+    text-align: center;
+  }
+  .social-media__links {
+    flex-direction: column;
+  }
+  .social-media .container {
+    flex-direction: column;
+  }
+  .social-media__info {
+    margin-bottom: 30px;
+  }
+  .social__item {
+    margin-left: 0	;
+  }
+  .social__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .social-media__links .social__item:not(:first-child) {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .social-media {
+    padding: 20px;
+  }
+  .social-media__links .social__item i {
+    font-size: 2.31em;
+  }
+  .social-media__links .social__item:not(:first-child) {
+    margin-left: 1.24em;
   }
 }
 .tabs {
@@ -542,14 +593,27 @@ body {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .tabs-nav {
     flex-direction: row;
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .tabs-nav__item:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  .tabs-nav__item:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  .tabs-nav__item:not(:last-child) {
+    border-bottom: 0;
+    border-right: 1px solid #ffffff;
+  }
   .tabs {
     flex-wrap: wrap;
+  }
+  .tabs-body__item {
+    max-width: 570px;
   }
   .tabs-body__item .wrapper {
     width: auto;
@@ -559,13 +623,10 @@ body {
   .tabs-body .show {
     display: flex;
     flex-wrap: wrap;
-  }
-  .tabs-nav__item {
-    width: 90px;
-    padding: 35px 0px;
+    justify-content: center;
   }
   .tabs .tabs-nav .active {
-    width: 90px;
+    height: 107px;
   }
   .tabs {
     justify-content: center;
@@ -636,7 +697,7 @@ body {
   line-height: 1.21;
   margin-bottom: 8px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .section__card {
     padding: 15px;
   }
@@ -738,6 +799,7 @@ body {
 @media only screen and (max-width: 425px) {
   .awesome-list {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .section_awesome {
     padding: 50px 10px;
@@ -756,6 +818,15 @@ body {
   }
   .h1_dark {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .awesome-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .awesome-list__item:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
 .trial-form_contact {
@@ -816,12 +887,22 @@ body {
   width: 528px;
   margin-bottom: 2.86em;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
+  .trial-form_contact {
+    flex-direction: column;
+    align-items: center;
+  }
   .section_contact {
     padding: 50px 10px;
   }
   .trial-form__textarea {
     margin-bottom: 20px;
+  }
+  .trial-form .wrapper {
+    width: 100%;
+  }
+  .trial-form_contact .trial-form__textarea {
+    width: 100%;
   }
 }
 .price-list__item {
@@ -895,7 +976,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 639px) {
   .price-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -903,11 +984,23 @@ body {
   .section .price-list__item {
     min-width: 320px;
   }
-  .section .price-list__item:not(:last-child) {
-    margin-bottom: 20px;
+  .price-list-header {
+    margin-top: 0;
   }
   .popular::after {
     min-width: 320px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .price-list {
+    flex-direction: column;
+  }
+  .awesome-list,
+  .price-list {
+    width: auto;
+  }
+  .price-list-header {
+    margin-top: 35px;
   }
 }
 .section_flex {

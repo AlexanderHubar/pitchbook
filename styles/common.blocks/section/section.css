@@ -60,7 +60,7 @@
   line-height: 1.21;
   margin-bottom: 8px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .section__card {
     padding: 15px;
   }

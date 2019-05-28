@@ -4,6 +4,7 @@
 	&__item {
 		min-width: 343px;
 	}
+
 	&-header {
 		&:not(.popular) {
 			margin-top: 35px;
@@ -37,7 +38,7 @@
 		&_price {
 			font-family: @raleway;
 			font-weight: 700;
-			font-size: 35px; 
+			font-size: 35px;
 			padding: 0;
 			height: 102px;
 
@@ -87,8 +88,8 @@
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width: 425px) {
-  .price-list {
+@media only screen and (max-width: 639px) {
+	.price-list {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -96,15 +97,31 @@
 	.section .price-list {
 		&__item {
 			min-width: 320px;
-
-			&:not(:last-child) {
-				margin-bottom: 20px;
-			}
 		}
+	}
+
+	.price-list-header {
+		margin-top: 0;
 	}
 
 	.popular::after {
 		min-width: 320px;
 	}
-	
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+	.price-list {
+		flex-direction: column;
+	}
+
+	.awesome-list,
+	.price-list {
+		width: auto;
+	}
+
+	.price-list-header {
+		margin-top: 35px;
+	}
+
 }
