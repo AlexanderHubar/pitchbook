@@ -30,24 +30,24 @@
 		&_tariff {
 			color: @white;
 			font-family: @openSans;
-			font-size: 20px;
+			font-size: 1.42em;
 			font-weight: 700;
 		}
 
 		&_price {
 			font-family: @raleway;
 			font-weight: 700;
-			line-height: 24px;
 			font-size: 35px; 
-			padding: 38px 0;
+			padding: 0;
+			height: 102px;
 
 			.number {
 				display: inline-block;
-				font-size: 94px;
+				font-size: 93px;
 			}
 
 			.currency {
-				margin-bottom: -43px;
+				margin-bottom: -44px;
 			}
 		}
 
@@ -65,7 +65,7 @@
 		text-align: center;
 		color: @gray;
 		text-transform: uppercase;
-		line-height: 40px;
+		line-height: 2.85;
 
 		&:not(:last-child) {
 			border-bottom: 1px solid @secondWhite;
@@ -85,4 +85,26 @@
 	background-color: @orange;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 425px) {
+  .price-list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.section .price-list {
+		&__item {
+			min-width: 320px;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.popular::after {
+		min-width: 320px;
+	}
+	
 }

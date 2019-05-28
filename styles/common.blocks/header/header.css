@@ -20,32 +20,32 @@
 .preview-list {
   display: flex;
   list-style: none;
-  padding: 30px 0;
+  padding: 2.14em 0;
 }
 .preview-list__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 1.07em;
 }
 .preview-list__item:hover .preview-list__title {
   color: #ff8b38;
 }
 .preview-list__title {
   color: #86878b;
-  margin-bottom: 10px;
+  margin-bottom: 0.7em;
 }
 .preview-list__image {
   height: 100px;
 }
 .submenu-nav {
   display: flex;
-  padding: 57px 0 34px 0;
+  padding: 4.07em 0 2.43 0;
 }
 .submenu-nav .submenu-nav__item {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 2.14em;
 }
 .submenu-nav .submenu-nav__item a {
-  margin-bottom: 9px;
+  margin-bottom: 0.64em;
   color: #37495e;
   display: inline-block;
 }
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   height: 72px;
-  padding: 0 24px;
+  padding: 0 1.71em;
   transition: .3s;
 }
 .navigation__item a {

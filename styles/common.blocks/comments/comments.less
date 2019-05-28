@@ -11,13 +11,16 @@
 
 .slider {
 	width: 100%;
-	padding: 0 106px;
+	padding: 0 7.57em;
+	position: relative;
 
 	&__button {
 		border: none;
 		background-color: transparent;
 		transition: .3s;
-		margin-top: 50px;
+		margin-top: 3.57em;
+
+
 
 		&:hover {
 			cursor: pointer;
@@ -26,70 +29,86 @@
 	}
 }
 
+.prev {
+	position: absolute;
+	left: -68px;
+	top: 5px;
+	z-index: 1;
+}
+
+.next {
+	position: absolute;
+	right: -11px;
+	top: 2px;
+	z-index: 1;
+}
+
+.wrapper_slider {
+	display: flex;
+	position: relative;
+}
+
 .slides-list {
 	display: flex;
-	width: 100%;
 	justify-content: space-between;
 	list-style: none;
-
-	li {
-		&:first-child {
-			margin-right: 25px;
-		}
-
-		&:last-child {
-			margin-left: 25px;
-		}
-	}
+	overflow: hidden;
+	width: 9999px;
+	transition: margin-left 250ms ease 0s;
 
 	&__item {
-		max-width: 273px;
+		min-width: 273px;
+		position: relative;
+		margin-right: 9.42em;
+
+		&:last-child {
+			margin-right: 4.86em;
+		}
 	}
 }
 
 .comment {
-	padding: 24px 12px;
+	padding: 1.71em 0.85em;
 	background-color: @secondWhite;
 	color: @gray;
 	font-style: italic;
 	position: relative;
-	margin-bottom: 23px;
+	margin-bottom: 1.64em;
 
 	&::after {
 		content: '';
-    display: block;
-    position: absolute;
-    bottom: -15px;
-    left: 28px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 10px 0 10px;
-    border-color: @secondWhite transparent transparent transparent;
+		display: block;
+		position: absolute;
+		bottom: -15px;
+		left: 28px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 15px 10px 0 10px;
+		border-color: @secondWhite transparent transparent transparent;
 	}
 }
 
-.wrapper_slider {
-}
 
 .client {
 	display: flex;
+
 	&__image {
 		width: 72px;
 		height: 72px;
 		border-radius: 50%;
 		overflow: hidden;
-		margin-right: 14px;
+		margin-right: 1em;
 	}
 
 	&-info {
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 		justify-content: center;
-		
+
 		&__name {
 			color: @thirdBlack;
-			font-size: 20px;
+			font-size: 1.42em;
 			font-weight: 700;
 		}
 	}

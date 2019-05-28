@@ -10,7 +10,7 @@
 		margin-bottom: 0;
 		.social__item {
 			i {
-				font-size: 45px;
+				font-size: 3.21em;
 			}
 			&:not(:first-child) {
 				margin-left: 58px;
@@ -25,11 +25,44 @@
 
 .h2 {
 	color: @thirdBlack;
-	font-size: 20px;
+	font-size: 1.42em;
 	font-weight: 700;
 }
 
 .text {
-	line-height: 20px;
+	line-height: 1.42;
+}
+
+@media only screen and (max-width: 425px) {
+  .social-media .container {
+		flex-wrap: wrap;
+	}
+
+	.social-media {
+    padding: 22px 10px;
+	}
+
+	.social {
+    display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		&__item {
+			margin-bottom: 10px;
+		}
+	}
+
+	.social-media__info {
+		max-width: 320px;
+		margin-bottom: 20px;
+	}
+
+	.social-media__links .social__item:not(:first-child) {
+    margin-left: 2.14em 
+	}
+
+	.social-media__links .social__item:nth-child(6) {
+		margin-left: 0;
+	}
 }
 

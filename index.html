@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header none">
 		<div class="container container_header container_between">
 			<a class="logo" href="index.html">
 				<img class="logo__image" src="img/logo.png" alt="PitchBook" title="PitchBook">
@@ -308,7 +308,7 @@
 			</nav>
 		</div>
 	</header>
-	<section class="welcome-section">
+	<section class="welcome-section ">
 		<div class="container container_welcome">
 			<div class="content">
 				<h1 class="h1 line">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
@@ -360,9 +360,9 @@
 			</ul>
 		</div>
 	</section>
-	<section class="section section_gray">
+	<section class="section section_gray section_tabs">
 		<div class="container container_column container_start">
-			<div class="tabs">
+			<div id="tab1" class="tabs">
 				<ul class="tabs-nav">
 					<li class="tabs-nav__item">Tab 1</li>
 					<li class="tabs-nav__item active">Tab 2</li>
@@ -371,55 +371,45 @@
 				<ul class="tabs-body">
 					<li class="tabs-body__item">
 						<div class="wrapper">
-								<h2 class="h2">Tabs 1 with soft transitioning effect.</h2>
-								<p class="text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-									penatibus et magnis dis parturient montes.
-								</p>
-								<p class="text last">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-									bibendum laoreet.
-								</p>
-								<button class="tabs__button">Download</button>
+							<h2 class="h2">Tabs 1 with soft transitioning effect.</h2>
+							<p class="text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+								penatibus et magnis dis parturient montes.
+							</p>
+							<p class="text last">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum laoreet.
+							</p>
+							<button class="tabs__button">Download</button>
 						</div>
 						<img src="img/tab-img.png" alt="Tab 1">
 					</li>
 					<li class="tabs-body__item show">
-							<div class="wrapper">
-									<h2 class="h2">Tabs 2 with soft transitioning effect.</h2>
-									<p class="text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-										bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-										justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-										penatibus et magnis dis parturient montes.
-									</p>
-									<p class="text last">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-										bibendum laoreet.
-									</p>
-									<button class="tabs__button">Download</button>
-							</div>
-							<img src="img/tab-img.png" alt="Tab 2">
-						</li>
-						<li class="tabs-body__item">
-								<div class="wrapper">
-										<h2 class="h2">Tabs 3 with soft transitioning effect.</h2>
-										<p class="text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-											bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-											justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-											penatibus et magnis dis parturient montes.
-										</p>
-										<p class="text last">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-											bibendum laoreet.
-										</p>
-										<button class="tabs__button">Download</button>
-								</div>
-								<img src="img/tab-img.png" alt="Tab 3">
-							</li>
+						<div class="wrapper">
+							<h2 class="h2">Tabs 2 with soft transitioning effect.</h2>
+							<p class="text last">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum laoreet.
+							</p>
+							<button class="tabs__button">Download</button>
+						</div>
+						<img src="img/tab-img.png" alt="Tab 2">
+					</li>
+					<li class="tabs-body__item">
+						<div class="wrapper">
+							<h2 class="h2">Tabs 3 with soft transitioning effect.</h2>
+							<p class="text last">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+								penatibus et magnis dis parturient montes.
+							</p>
+							<button class="tabs__button">Get Started</button>
+						</div>
+						<img src="img/tab-img.png" alt="Tab 3">
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -563,73 +553,123 @@
 			</ul>
 		</div>
 	</section>
-	<section class="section section_flex section_center">
-			<h2 class="h1 h1_dark line_orange line_center">WHAT OUR CUSTOMERS ARE SAYING</h2>
-			<p class="text  text_mb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<section class="slider">
-				<div class="wrapper wrapper_slider">
-					<ul class="slides-list">
-						<li>
-							<button class="slider__button prev">
-									<img src="img/prev.png" alt="prev">
-							</button>
-						</li>
-						<li class="slides-list__item">
-							<div class="comment">
-								Lorem ipsum dolor sit amet, 
-								consectetur adipisicing elit. Doloribus 
-								accusamus expedita repellat similique 
-								odio aspernatur ex, architecto eaque 
-								quo suscipit.
+	<section class="section section_flex section_center none">
+		<h2 class="h1 h1_dark line_orange line_center">WHAT OUR CUSTOMERS ARE SAYING</h2>
+		<p class="text  text_mb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<section id="slider" class="slider">
+			<div class="wrapper wrapper_slider">
+				<button id="prev" class="slider__button prev">
+					<img src="img/prev.png" alt="prev">
+				</button>
+				<ul class="slides-list">
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 1">
+							<div class="client-info">
+								<h4 class="client-info__name">Jeremy H.</h4>
+								<span class="client-info__profession">Manager</span>
 							</div>
-							<div class="client">
-								<img class="client__image" src="img/user.jpg" alt="User 1">
-								<div class="client-info">
-										<h4 class="client-info__name">Jeremy H.</h4>
-										<span class="client-info__profession">Manager</span>
-								</div>
-							</div>
-						</li>
-						<li class="slides-list__item">
-							<div class="comment">
-								Lorem ipsum dolor sit amet, 
-								consectetur adipisicing elit. Doloribus 
-								accusamus expedita repellat similique 
-								odio aspernatur ex, architecto eaque 
-								quo suscipit.
-							</div>
-							<div class="client">
-								<img class="client__image" src="img/user.jpg" alt="User 2">
-								<div class="client-info">
-									<h4 class="client-info__name">John S.</h4>
+						</div>
+						<span class="absolute"></span>
+					</li>
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 2">
+							<div class="client-info">
+								<h4 class="client-info__name">John S.</h4>
 								<span class="client-info__profession">Freelancer</span>
-								</div>
 							</div>
-						</li>
-						<li class="slides-list__item">
-							<div class="comment">
-								Lorem ipsum dolor sit amet, 
-								consectetur adipisicing elit. Doloribus 
-								accusamus expedita repellat similique 
-								odio aspernatur ex, architecto eaque 
-								quo suscipit.
-							</div>
-							<div class="client">
-								<img class="client__image" src="img/user.jpg" alt="User 3">
-								<div class="client-info">
-									<h4 class="client-info__name">Susan W.</h4>
+						</div>
+						<span class="absolute"></span>
+					</li>
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 3">
+							<div class="client-info">
+								<h4 class="client-info__name">Susan W.</h4>
 								<span class="client-info__profession">Photographer</span>
-								</div>
 							</div>
-						</li>
-						<li>
-							<button class="slider__button next">
-									<img src="img/next.png" alt="Next">
-							</button>
-						</li>
-					</ul>
-				</div>
-			</section>
+						</div>
+						<span class="absolute"></span>
+					</li>
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 2">
+							<div class="client-info">
+								<h4 class="client-info__name">John S.</h4>
+								<span class="client-info__profession">Freelancer</span>
+							</div>
+						</div>
+						<span class="absolute"></span>
+					</li>
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 1">
+							<div class="client-info">
+								<h4 class="client-info__name">Jeremy H.</h4>
+								<span class="client-info__profession">Manager</span>
+							</div>
+						</div>
+						<span class="absolute"></span>
+					</li>
+					<li class="slides-list__item">
+						<div class="comment">
+							Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Doloribus
+							accusamus expedita repellat similique
+							odio aspernatur ex, architecto eaque
+							quo suscipit.
+						</div>
+						<div class="client">
+							<img class="client__image" src="img/user.jpg" alt="User 3">
+							<div class="client-info">
+								<h4 class="client-info__name">Susan W.</h4>
+								<span class="client-info__profession">Photographer</span>
+							</div>
+						</div>
+						<span class="absolute"></span>
+					</li>
+				</ul>
+				<button id="next" class="slider__button next">
+					<img src="img/next.png" alt="Next">
+				</button>
+			</div>
+		</section>
 	</section>
 	<section class="stylish-section">
 		<div class="container container_column">
@@ -639,7 +679,7 @@
 			<button class="content__button">Download</button>
 		</div>
 	</section>
-	<section class="section section_contact">
+	<section class="section section_contact none">
 		<div class="container container_column">
 			<h2 class="h1 h1_dark line_orange line_center">Contact us</h2>
 			<p class="text text_mb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -682,6 +722,9 @@
 			<span class="policy">© 2016 PitchBook</span>
 		</div>
 	</footer>
+	<script src="js/tab.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

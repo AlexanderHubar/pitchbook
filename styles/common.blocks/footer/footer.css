@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 15px;
+  padding-top: 1.5em;
+  padding-bottom: 1.07em;
   text-align: center;
   background-color: #37495e;
 }
@@ -9,14 +9,14 @@
   display: flex;
   width: 320px;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 1.07em;
 }
 .social__item:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 2.14em;
 }
 .social__item i {
   color: #cccccc;
-  font-size: 22px;
+  font-size: 1.57em;
   transition: .2s;
 }
 .social__item i:hover {
@@ -26,5 +26,10 @@
 .policy {
   opacity: 0.5;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.85em;
+}
+@media only screen and (max-width: 425px) {
+  .footer .social {
+    justify-content: center;
+  }
 }

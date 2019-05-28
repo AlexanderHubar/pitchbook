@@ -2,8 +2,8 @@
 
 .footer {
 	width: 100%;
-	padding-top: 21px;
-	padding-bottom: 15px;
+	padding-top: 1.5em;
+	padding-bottom: 1.07em;
 	text-align: center;
 	background-color: @primary;
 }
@@ -12,15 +12,15 @@
 	display: flex;
 	width: 320px;
 	list-style: none;
-	margin-bottom: 15px;
+	margin-bottom: 1.07em;
 
 	&__item {
 		&:not(:first-child) {
-			margin-left: 30px;
+			margin-left: 2.14em;
 		}
 		& i {
 			color: @lighterGray;
-			font-size: 22px;
+			font-size: 1.57em;
 			transition: .2s;
 
 			&:hover {
@@ -34,5 +34,13 @@
 .policy {
 	opacity: 0.5;
 	color: @white;
-	font-size: 12px;
+	font-size: 0.85em;
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+		.social {
+			justify-content: center;
+		}
+	}
 }

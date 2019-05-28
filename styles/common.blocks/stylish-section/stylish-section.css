@@ -1,0 +1,16 @@
+.stylish-section {
+  padding: 74px 0 63px 0;
+  background-image: url('../img/Custom_Panel.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 425px) {
+  .stylish-section {
+    padding: 35px 15px 30px 15px;
+  }
+  .stylish-section .h1 {
+    text-align: center;
+  }
+}
