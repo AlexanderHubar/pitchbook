@@ -9,7 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 352px;
+  width: 352px;
+}
+.flex-container {
+  max-width: 100%;
 }
 .text_center {
   text-align: center;
@@ -23,6 +26,8 @@
 }
 .icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 70px;
   border: 2px solid #ff8b38;
@@ -31,7 +36,6 @@
 }
 .icon i,
 .icon img {
-  margin: auto;
   color: #ff8b38;
   font-size: 2.07em;
 }

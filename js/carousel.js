@@ -1,25 +1,26 @@
-const carousel = document.querySelector('#slider');
+var carousel = document.querySelector('#slider');
 
-const slider = container => {
-	const list = container.querySelector('.slides-list');
-	const slides = container.querySelectorAll('.slides-list__item');
-	const prevButton = container.querySelector('#prev');
-	const nextButton = container.querySelector('#next');
+function slider(container) {
+	var list = container.querySelector('.slides-list');
+	var slides = container.querySelectorAll('.slides-list__item');
+	var prevButton = container.querySelector('#prev');
+	var nextButton = container.querySelector('#next');
 
-	var width = 273 + 132; 
-	var count = 3; 
+	var width = 273 + 132;
+	var count = 3;
 
-	let position = 0;
+	var position = 0;
 
-	prevButton.onclick = () => {
+	prevButton.addEventListener('click', function() {
 		position = Math.min(position + width * count, 0)
 		list.style.marginLeft = position + 'px';
-	};
+	}) 
 
-	nextButton.onclick = () => {
+	nextButton.addEventListener('click', function() {
 		position = Math.max(position - width * count, -width * (slides.length - count));
 		list.style.marginLeft = position + 'px';
-	};
-}
+	});
 
-slider(carousel);
+};
+
+slider(carousel)
