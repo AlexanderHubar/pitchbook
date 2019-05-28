@@ -56,3 +56,11 @@
   width: 528px;
   margin-bottom: 2.86em;
 }
+@media only screen and (max-width: 425px) {
+  .section_contact {
+    padding: 50px 10px;
+  }
+  .trial-form__textarea {
+    margin-bottom: 20px;
+  }
+}
