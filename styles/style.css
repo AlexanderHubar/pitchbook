@@ -634,6 +634,9 @@ body {
     border-bottom: 0;
     border-right: 1px solid #ffffff;
   }
+  .section_tabs .container_column {
+    flex-direction: row;
+  }
   .container_start {
     align-items: center;
   }
@@ -840,6 +843,9 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+}
+.text-center {
+  text-align: center;
 }
 @media only screen and (max-width: 425px) {
   .stylish-section {
@@ -1105,7 +1111,6 @@ body {
   .price-list {
     flex-direction: column;
   }
-  .awesome-list,
   .price-list {
     width: auto;
   }

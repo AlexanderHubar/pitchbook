@@ -147,6 +147,9 @@
     border-bottom: 0;
     border-right: 1px solid #ffffff;
   }
+  .section_tabs .container_column {
+    flex-direction: row;
+  }
   .container_start {
     align-items: center;
   }

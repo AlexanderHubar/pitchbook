@@ -88,7 +88,6 @@
   .price-list {
     flex-direction: column;
   }
-  .awesome-list,
   .price-list {
     width: auto;
   }
