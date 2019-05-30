@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 			$('.next').on('click', function () {
 				slide++;
-				$('.slider.prev').prop('disabled', false);
+				$('.prev').prop('disabled', false);
 				$('.slides-list__item').each(function (index) {
 					slides[index].classList.remove('visible');
 					if (slide > slides.length - 1) {
