@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 			slides[0].classList.add('visible');
 
-			$('.slider#next').on('click', function () {
+			$('.next').on('click', function () {
 				slide++;
 				$('.slider.prev').prop('disabled', false);
 				$('.slides-list__item').each(function (index) {
