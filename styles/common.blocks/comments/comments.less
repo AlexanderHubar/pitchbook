@@ -52,19 +52,22 @@
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	overflow: hidden;
-	width: 9999px;
+	width: 100%;
 	transition: margin-left 250ms ease 0s;
 
 	&__item {
+		display: none;
 		min-width: 273px;
-		position: relative;
 		margin-right: 9.42em;
 
 		&:last-child {
 			margin-right: 4.86em;
 		}
 	}
+}
+
+.visible {
+	display: block;
 }
 
 .comment {

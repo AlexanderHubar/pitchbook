@@ -40,17 +40,19 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  overflow: hidden;
-  width: 9999px;
+  width: 100%;
   transition: margin-left 250ms ease 0s;
 }
 .slides-list__item {
+  display: none;
   min-width: 273px;
-  position: relative;
   margin-right: 9.42em;
 }
 .slides-list__item:last-child {
   margin-right: 4.86em;
+}
+.visible {
+  display: block;
 }
 .comment {
   padding: 1.71em 0.85em;
