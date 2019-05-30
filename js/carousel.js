@@ -1,7 +1,6 @@
 // var carousel = document.querySelector('.slider');
 
 $(document).ready(function () {
-
 	var width = $('body').width();
 
 		var slides = [];
@@ -11,7 +10,7 @@ $(document).ready(function () {
 		if (width < 880) {
 			slide = 0;
 
-			$('.slider.slides-list__item').each(function () {
+			$('.slides-list__item').each(function () {
 				slides.push(this);
 				$(this).css('margin-right', '4.86em');
 			})
