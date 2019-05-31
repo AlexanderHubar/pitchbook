@@ -77,7 +77,6 @@ $(document).ready(function () {
 			});
 
 			$('.prev', this).on('click', function () {
-				console.log('click')
 				$('.slides-list__item', context).each(function (index) {
 					$('.next', context).prop('disabled', false);
 					if (!$('.slides-list__item:nth-child(1)', context).hasClass('visible')) {
@@ -130,7 +129,6 @@ $(document).ready(function () {
 			});
 
 			$('.prev', this).on('click', function () {
-				console.log('click')
 				$('.slides-list__item', context).each(function (index) {
 					$('.next', context).prop('disabled', false);
 					if (!$('.slides-list__item:nth-child(1)', context).hasClass('visible')) {
@@ -155,5 +153,7 @@ $(document).ready(function () {
 		}
 	};
 
-	$('#slider1').slider();
+	$('.slider').each(function() {
+		$(this).slider();
+	})
 })
