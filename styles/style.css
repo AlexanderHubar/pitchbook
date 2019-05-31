@@ -1180,7 +1180,7 @@ body {
 .slides-list__item:last-child {
   margin-right: 4.86em;
 }
-.visible {
+.slides-list .visible {
   display: block;
 }
 .comment {
